@@ -1,0 +1,95 @@
+@import '../../vars.css';
+
+.container {
+	color: var(--color-text);
+	margin-top: 120px;
+	background-color: var(--color-secondary);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100vw;
+	padding: 28px 10%;
+	gap: 10px;
+}
+
+.title h2 {
+	font-size: 62px;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+.title p {
+	font-size: 37px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	list-style: none;
+	gap: 20px;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.contact a {
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+.downloadButton {
+	text-decoration: none;
+	background-color: var(--color-primary);
+	color: var(--color-text);
+	border-radius: 100px;
+	font-size: 25px;
+	font-weight: 500;
+	padding: 10px 35px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.downloadButton :hover {
+	background-color: #0056b3;
+	transform: translateY(-2px);
+}
+
+@media screen and (max-width: 830px) {
+	.container {
+		flex-direction: column;
+		gap: 23px;
+	}
+
+	.title h2 {
+		font-size: 52px;
+		font-weight: 700;
+		letter-spacing: 4px;
+	}
+
+	.title p {
+		font-size: 27px;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contacts {
+		align-items: center;
+	}
+}
