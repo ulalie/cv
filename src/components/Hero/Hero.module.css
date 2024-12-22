@@ -24,8 +24,7 @@
 	font-weight: 900;
 	margin-bottom: 33px;
 	font-family: var(--font-roboto);
-	color: var (--color-text);
-	background-color:(--color-text);
+	color: var(--color-text);
 }
 
 .description {
