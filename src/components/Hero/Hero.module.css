@@ -49,19 +49,19 @@
 	font-weight: 600;
 	padding: 17px 26px;
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .contactBtn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px); 
+	background-color: #0056b3;
+	transform: translateY(-2px);
 }
 
 .heroImg {
-	width: 50%;
+	min-width: 50%;
+	height: auto;
 	z-index: 1;
-
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -112,5 +112,9 @@ cursor: pointer;
 	}
 	.content {
 		align-items: center;
+	}
+	.heroImg {
+		min-width: 20%;
+		max-width: 70%;
 	}
 }
