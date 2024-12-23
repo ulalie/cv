@@ -24,18 +24,12 @@
 	font-weight: 900;
 	margin-bottom: 33px;
 	font-family: var(--font-roboto);
-	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 1) 70%,
-		rgba(255, 255, 255, 0) 180%
-	);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+	color: var(--color-text);
 }
 
 .description {
 	font-size: 30px;
-	font-family: var(-);
+	font-family: var(--font-roboto);
 	margin-bottom: 52px;
 	color: var(--color-text);
 }
@@ -49,38 +43,20 @@
 	font-weight: 600;
 	padding: 17px 26px;
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .contactBtn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px); 
+	background-color: #0056b3;
+	transform: translateY(-2px);
 }
 
 .heroImg {
-	width: 50%;
+	min-width: 50%;
+	height: auto;
 	z-index: 1;
-
-	animation-name: floating;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
 }
-
-/*
-@keyframes floating {
-	0% {
-		transform: translate(0, 0px);
-	}
-	50% {
-		transform: translate(0, 10px);
-	}
-	100% {
-		transform: translate(0, 0px);
-	}
-} */
-
 .topBlur,
 .bottomBlur {
 	position: absolute;
@@ -112,5 +88,9 @@ cursor: pointer;
 	}
 	.content {
 		align-items: center;
+	}
+	.heroImg {
+		min-width: 20%;
+		max-width: 70%;
 	}
 }
