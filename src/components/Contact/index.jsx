@@ -11,13 +11,9 @@ const Contact = () => {
 			<div className={styles.title}>
 				<h2>Contact</h2>
 				<p>Feel free to reach out!</p>
-				<a
-					href='../../../public/my_cv.pdf'
-					download
-					className={styles.downloadButton}
-				>
-					Download CV
-				</a>
+				<a href='/my_cv.pdf' download className={styles.downloadButton}>
+    Download CV
+</a>
 			</div>
 			<ul className={styles.contacts}>
 				<li className={styles.contact}>
